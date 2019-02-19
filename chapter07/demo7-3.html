@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>使用after伪对象清除浮动</title>
+<style type="text/css">
+.father{                             /*没有给父元素定义高度*/
+	background:#ccc;                 
+	border:1px dashed #999;     
+}
+.father:after{                      /*对父元素应用after伪对象样式*/
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0;
+}
+.box01,.box02,.box03{            
+	height:50px;            
+	line-height:50px;    
+	background:#f9c;             
+	border:1px dashed #999;     
+	margin:15px;                  
+	padding:0px 10px;  
+	float:left;                   /*定义box01、box02、box03三个盒子左浮动*/
+}
+</style>
+</head> 
+<body>
+<div class="father">
+	<div class="box01">box01</div>
+	<div class="box02">box02</div>
+	<div class="box03">box03</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/ 
+body{font-size:16px;}   
+/*清除浏览器的默认样式*/
+body,p,img{padding:0; margin:0; border:0;}  
+.all{
+	width:650px;
+	border-top:3px double #ccc;
+	padding-top:20px; 
+	border-bottom:3px double #ccc;
+	margin:20px auto;
+}
+.box{
+	float:left;
+	margin-right:30px;
+	margin-bottom:10px;
+}
+p{
+	width:600px;
+	height:40px;
+	border-left:8px solid #CCC;
+	padding-left:10px;
+	clear:left;        /*清除浮动元素的影响*/
+	color:#888;
+	margin-bottom:20px;
+}
+span{
+	color:#333;
+	font-weight:bold;
+}

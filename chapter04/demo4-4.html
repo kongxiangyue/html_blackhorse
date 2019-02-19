@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设置内边距</title>
+<style type="text/css">
+.border{ border:5px solid #ccc;}     /*为图像和段落设置边框*/
+img{
+	padding:80px;                       /*图像4个方向内边距相同*/
+	padding-bottom:0;                  /*单独设置下边距*/
+	/*上面两行代码等价于padding:80px 80px 0;*/
+}        
+p{ padding:5%;}                         /*段落内边距为父元素宽度的5%*/
+</style>
+</head>
+<body>
+<img class="border" src="images/couser.jpg" alt="2014课程马上升级" />
+<p class="border">段落内边距为父元素宽度的5%。</p>
+</body>
+</html>

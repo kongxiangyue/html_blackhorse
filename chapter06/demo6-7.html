@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>使用fieldset标记为表单分组</title>
+</head>
+<body>
+<form action="#" method="post">
+    <fieldset>	                      <!--为表单内容分组-->
+        <legend>个人注册</legend>     <!--定义表单组名称-->
+        昵称: 
+        <input type="text"/><br />
+        密码：
+        <input type="password" /><br />	
+        性别:
+        <label for="man"><input type="radio" name="sex" id="man"/>男</label>
+        <label for="woman" ><input type="radio" name="sex" id="woman" />女</label><br /> 
+    </fieldset><br />	
+    <fieldset>                        <!--为表单内容分组-->	
+        <legend>企业注册</legend>    <!--定义表单组名称-->
+        企业名称：
+        <input type="text" /><br />	
+        公司地址: 
+        <input type="text" /><br />	
+    </fieldset><br />	
+    	   <input type="submit" value="提交" />			 
+</form>
+</body>
+</html>

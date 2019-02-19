@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{ font-family:"微软雅黑";}
+/*重置浏览器的默认样式*/
+body,p,h2,img{padding:0; margin:0; border:0;}
+/*所有的超链接转换为块元素*/
+a{ display:block;}
+.all{
+	width:603px;
+	height:400px;
+	margin:20px auto;
+	background:#1E2D3B;
+	padding-right:70px;
+}
+.left{
+	width:332px;
+	height:400px;
+	background:url(images/road.png) no-repeat 70px top;
+	float:left;
+	position:relative;    /*将父元素设置为相对定位*/
+}
+.one{
+	width:158px;
+	height:177px;
+	background:url(images/icon1.png) no-repeat;
+	position:absolute;   /*将子元素设置为绝对定位*/
+	left:6px;
+	top:130px;
+}
+.two{
+	width:98px;
+	height:106px;
+	background:url(images/icon3.png) no-repeat;
+	position:absolute;   /*将子元素设置为绝对定位*/
+	left:233px;
+	top:130px;
+}
+.three{
+	width:69px;
+	height:78px;
+	background:url(images/icon5.png) no-repeat;
+	position:absolute;   /*将子元素设置为绝对定位*/
+	left:127px;
+	top:17px;
+}
+.four{
+	width:45px;
+	height:50px;
+	background:url(images/icon7.png) no-repeat;
+	position:absolute;  /*将子元素设置为绝对定位*/
+	left:232px;
+	top:8px;
+}
+/*鼠标悬浮样式*/
+.one:hover{ background:url(images/icon2.png) no-repeat;}
+.two:hover{ background:url(images/icon4.png) no-repeat;}
+.three:hover{ background:url(images/icon6.png) no-repeat;}
+.four:hover{ background:url(images/icon8.png) no-repeat;}
+
+.right{
+	width:224px;
+	height:340px;
+	padding-top:60px;
+	float:right;
+	font-style:italic;
+	font-weight:bold;
+}
+.right h2{
+	font-size:88px;
+	color:#3f9ade;
+}
+.right .txt{
+	font-size:18px;
+	color:#55606b;
+	margin-bottom:20px;
+}

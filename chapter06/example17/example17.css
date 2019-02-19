@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{font-family:"微软雅黑";  font-size: 12px;}
+/*重置浏览器的默认样式*/
+body,form,input,select,textarea{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:none;
+	background-color:transparent;   /*背景透明*/
+} 
+#list{             /*整体控制界面*/
+	width:743px;
+	margin:50px auto;
+}
+.content{         /*整体控制日志标题及内容*/
+	height:418px;
+	padding-top:35px;
+	background:url(images/bg.jpg) no-repeat;
+}
+.title{          /*控制日志标题*/
+	width:739px;
+	height:30px;
+	border-top:2px dotted #83775e;
+	border-bottom:2px dotted #666;
+	text-align:center;
+	font-size:18px;
+}
+.txt{           /*控制日志内容*/
+	width:739px;
+	height:300px;
+	border-top:2px dotted #83775e;
+	margin-top:10px;
+	font-size:24px;
+}
+.choose{        /*整体控制日志分类及权限*/
+	height:30px;
+	padding:12px 0 0 5px;
+	background-color:#b6ac94;
+	font-weight:bold;
+}
+select{         /*控制下拉菜单*/
+	width:80px;
+	border:1px solid #666;
+	background-color:#F5F5F5;
+}
+.choose1{      /*单独控制第一个下拉菜单*/
+	width:100px;
+	margin-right:20px;
+}
+/*按钮*/
+.btn{margin-top:10px;}  /*和上面的模块拉开距离*/
+.btn1,.btn2,.btn3{      /*控制三个按钮的宽、高、背景及边框*/
+	width:100px;
+	height:24px;
+	background-color:#eee;
+	border:1px solid #ccc;
+}
+.btn1{background-color:#b6ac94;}
+.btn3{margin-left:425px;}

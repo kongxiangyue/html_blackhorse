@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置浏览器的默认样式*/
+body,p,img{ padding:0; margin:0; border:0;}
+/*整体控制最外层大盒子*/
+.all{
+	width:150px;
+	height:278px;
+	margin:50px auto;
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+.info p{
+	width:138px;
+	height:33px;
+	line-height:33px;
+	border:1px solid #2E3138;
+	margin-top:2px;
+	padding-left:10px;
+}

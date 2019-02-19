@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/ 
+body{ font-size:14px;}   
+/*清除浏览器的默认样式*/
+body,dl,dt,dd{ padding:0; margin:0; border:0;}                  
+dl{
+	width:170px;
+	height:270px;
+	border:10px solid #f1e9e9;
+	padding:10px;
+	margin:10px;
+}
+dt{width:170px; height:162px; background:url(images/img.png) no-repeat -17px center; margin-bottom:5px;}
+dd{width:170px; height:26px; line-height:26px; color:#999; padding-left:5px;}
+.poo1{font-weight:bold; font-size:16px;}
+.poo2{font-size:12px;}
+

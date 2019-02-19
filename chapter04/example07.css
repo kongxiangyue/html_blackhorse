@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+/*将页面中所有元素的内外边距设置为0*/
+*{ padding:0; margin:0;}
+/*控制最外面的大盒子*/
+.all{
+	width:210px;
+	height:265px;
+	border:1px solid #E1E1E1;
+	margin:50px auto;
+	text-align:center;
+}
+.header{
+	font-size:18px;
+	font-family:"微软雅黑";
+	height:40px;
+	line-height:40px;
+	border-bottom:1px dashed #E1E1E1;
+}
+.text p{
+	font-size:14px;
+	color:#CCC;
+	height:24px;
+	line-height:24px;
+}

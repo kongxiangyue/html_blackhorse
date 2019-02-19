@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>二维数组</title>
+</head>
+<body>
+<script type="text/javascript">
+var students,i,j;
+students=new Array();
+students[0]=new Array("张三","18岁","男");
+students[1]=new Array("李四","17岁","男");
+students[2]=new Array("王五","18岁","女");
+for(i in students){		
+	for(j in students[i]){
+			document.write(students[i][j] +"\t");
+	}
+    document.write("<br/>");
+}	
+</script>
+</body>
+</html>

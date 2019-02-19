@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>键盘事件</title>
+<style type="text/css">
+*{padding:0;margin:0;list-style:none;}
+.all{
+    margin:20px auto;
+    border:1px solid #000;
+    background:#eee;
+    width:300px;
+}
+ul{
+    height:50px;
+    line-height:50px;
+}
+.head{font-weight:bold;}
+li{
+    text-align:center;
+    float:left;
+    width:100px;
+}
+#num{width:50px;}
+</style>
+<script type="text/javascript">
+	function checkNum(obj){ 
+		var num =  Number(obj.value);
+		//判断是否是数字
+		if(!num){
+			alert('请输入正确的数字');
+			//通过为元素对象的属性赋值，就可以改变这个属性的属性值
+			obj.value =1;
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="all">
+		<ul class="head">
+			<li>商品</li>
+			<li>数量</li>
+			<li>操作</li>
+		</ul>
+		<ul>
+			<li>手机</li>
+			<li><input type="text" id="num" value="1" onkeyup="checkNum(this)"></li>
+			<li>删除</li>
+		</ul>
+	</div>
+</body>
+</html>

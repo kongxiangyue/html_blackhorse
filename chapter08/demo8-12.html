@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>元素对象常用操作</title>
+<script type="text/javascript">
+	function init(){
+ 		var h1 = document.createElement("h1"); //创建一个<h1>元素节点
+ 		var text = document.createTextNode("Hello,JavaScript!"); //创建一个文本节点
+ 		h1.appendChild(text); //为<h1>元素追加文本节点
+ 		document.body.appendChild(h1); //为<body>追加<h1>元素
+ 	}
+ </script>
+ </head>
+ <body onload="init()">
+ </body>
+ </html>

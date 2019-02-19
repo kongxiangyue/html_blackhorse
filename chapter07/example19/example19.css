@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{font-size:12px; color:#333;}
+/*重置浏览器的默认样式*/
+body,ul,li{ padding:0; margin:0; list-style:none;}
+#head{
+	width:730px;
+	height:150px;
+	margin:0 auto;
+}
+h1{float:left;}          /*设置世界杯LOGO左浮动*/
+.head_r{float:right;}    /*设置主题内容图片右浮动*/
+#content{
+	width:800px;
+	height:300px;
+	margin:0 auto;
+}
+li{
+	float:left;         /*设置每一个列表项左浮动*/
+	margin-right:10px;
+}
+p{text-align:center;}

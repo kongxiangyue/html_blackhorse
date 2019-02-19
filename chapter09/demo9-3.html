@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网页时钟</title>
+<script type="text/javascript">
+	//定时器执行的函数
+	function updateDate(){
+		//获取系统时间
+		var dataTime = (new Date()).toLocaleString() + "<br />";
+		//将时间字符串写到<div id="clock"></div>中
+		clock.innerHTML = dataTime;
+	}
+	//清除定时器
+	function stopClock(){
+		clearInterval(t);
+	}
+	//初始化
+	function init(){
+		//全局变量clock保存用于显示时间的<div id="clock">元素
+		clock = document.getElementById("clock");
+		//全局变量t保存定时器
+		t = setInterval(updateDate,1000);
+	}
+</script>
+</head>
+<body onload="init()">
+	<button onclick="stopClock()">停止</button>
+	<div id="clock"></div>
+</body>
+</html>

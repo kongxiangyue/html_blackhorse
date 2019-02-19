@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{ font-size:20px; color:#fff; font-family: microsoft yahei,arial;}
+/*清除浏览器默认样式*/
+img{list-style:none; outline:none;}
+/*限时秒杀样式*/
+.img-box{position:relative; background:url(images/flash_sale.png); width:702px; height:378px;margin:0 auto;}
+.img-box span{position:relative;width:32px; height:27px; text-align:center; line-height:26px; margin:4px 0 0 3px;}
+.img-box #hour{left:50.6%;top:68.35%}
+.img-box #munite{left:55.2%;top:68.35%}
+.img-box #second{left:59.6%;top:68.35%}
+/*秒杀结束样式*/
+#bot-box{position:absolute; z-index:1; top:250px; display:none; width:702px; height:51px; line-height:40px;text-align:center; color:#666; font-size:28px;}
+ 
+          

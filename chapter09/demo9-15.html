@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>检测用户名是否合法</title>
+<script type="text/javascript">
+	function isOtherChar(str){
+		//定义特殊字符的数组
+		var arr = ["!","<",">","&","(",")"];
+		//循环比较字符串中，是否含有特殊符号
+		for(var i=0;i<str.length; i++){
+			for(var j=0;j<arr.length;j++){
+				if(str.charAt(i)==arr[j]){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	//定义函数：checkChar()
+	function checkChar(){
+		var str = window.prompt("请输入用户名：不能含有!、<、>、&、(、)符号");
+		if(isOtherChar(str)){
+			alert("用户名"+str+"含有特殊符号！");
+		}else{
+			alert("用户名"+str+"输入合法！");
+		}
+	}
+</script>
+</head>
+<body onload="checkChar()">
+</body>
+</html>

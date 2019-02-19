@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{ font-size:14px; font-family:"宋体";}
+/*清除浏览器默认样式*/
+body,ul,li{list-style:none; margin:0; padding:0; }
+/*大div样式*/
+.tab-box{width:383px;margin:10px;border:1px solid #ccc;border-top:2px solid #206F96;}
+/*选项样式*/
+.tab-head{height:31px;}
+.tab-head-div{width:95px;height:30px;float:left;border-bottom:1px solid #ccc;border-right:1px solid #ccc;background:#eee;line-height:30px;text-align:center;cursor:pointer;}
+.tab-head .current{background:#fff;border-bottom:1px solid #fff;}
+.tab-head-r{border-right:0;}
+/*选项内容样式*/
+.tab-body-ul{display:none;margin:20px 10px;}
+.tab-body-ul li{margin:5px;}
+.tab-body .current{display:block;}

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS控制表单样式</title>
+<style type="text/css">
+body{ font-size:12px; font-family:"宋体";}                      /*全局控制*/
+body,form,input{ padding:0; margin:0; border:0;}                /*重置浏览器的默认样式*/
+form{
+    width:300px;
+    height:135px;
+    padding-top:15px;
+    margin:50px auto;                      /*使表单在浏览器中居中*/
+    background:#DCF5FA;                    /*为表单添加背景颜色*/
+} 
+p{width:273px;height:24px; padding-left: 25px;margin-bottom:15px;}  
+span{display: inline-block; width:70px;height:24px; line-height: 24px; text-align: right; }                     
+.num,.pass{                                   /*对前两个input控件设置共同的宽、高、边框、内边距*/ 
+    width:152px;                                      
+    height:18px;                                 
+    border:1px solid #38a1bf;
+    padding:2px 2px 2px 22px; 
+} 
+.num{                                         /*定义第一个input控件的背景、文本颜色*/
+     background:url(images/1.jpg) no-repeat 5px center #FFF;
+     color:#999;
+}                     
+.pass{                                         /*定义第二个input控件的背景*/                           
+    background:url(images/2.jpg) no-repeat 5px center #FFF;
+}                  
+.btn{ 
+    display:inline-block;
+    width:87px; height:24px;
+    margin:10px 0 10px 101px;
+    background:url("images/5.jpg") no-repeat;}       /*使按钮和上面的内容拉开距离*/                
+</style>
+</head>
+<body>
+<form action="#" method="post">
+    <p>
+        <span class="left">账号/号码：</span>
+        <input type="text" value="itcast" class="num" />
+    </p>
+    <p>
+        <span class="left">密码：</span>
+        <input type="password" class="pass" />
+    </p>
+        <input type="button" class="btn" />
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>select控件</title>
+</head>
+<body>
+<form action="#" method="post">
+所在校区：<br />
+	<select>                                            <!--最基本的下拉菜单-->
+    	   <option>-请选择-</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>武汉</option>
+        <option>成都</option>
+    </select><br /><br />
+特长（单选）:<br />
+    <select>     
+    	   <option>唱歌</option>
+        <option selected="selected">画画</option>   <!--设置默认选中项-->
+        <option>跳舞</option>
+    </select><br /><br />
+爱好（多选）:<br />
+    <select multiple="multiple" size="4">           <!--设置多选和可见选项数-->
+    	   <option>读书</option>
+        <option selected="selected">写代码</option> <!--设置默认选中项-->
+        <option>旅行</option>
+        <option selected="selected">听音乐</option> <!--设置默认选中项-->
+        <option>踢球</option>
+    </select><br /><br />
+    <input type="submit" value="提交"/>
+</form>
+</body>
+</html>

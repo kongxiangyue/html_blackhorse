@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>元素的转换</title>
+<style type="text/css">
+div,span{                   /*同时设置div和span的样式*/    
+	width:200px;           /*宽度*/
+	height:50px;           /*高度*/
+	background:#FCC;      /*背景颜色*/
+	margin:10px;           /*外边距*/
+}
+.d_one,.d_two{ display:inline;}     /*将前两个div转换为行内元素*/
+.s_one{ display:inline-block;}      /*将第一个span转换为行内块元素*/
+.s_three{ display:block;}           /*将第三个span转换为块元素*/
+</style>
+</head>
+<body>
+<div class="d_one">第一个div中的文本</div>
+<div class="d_two">第二个div中的文本</div>
+<div class="d_three">第三个div中的文本</div>
+<span class="s_one">第一个span中的文本</span>
+<span class="s_two">第二个span中的文本</span>
+<span class="s_three">第三个span中的文本</span>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置浏览器的默认样式*/
+body,h1,h2,h3,ul,li,img,p{ padding:0; margin:0; list-style:none; boeder:0;}
+/*全局控制*/
+body{font-size:14px; font-family:"Arial","宋体"; color:#FFF;}
+.all{                   /*整理控制最外层的大盒子*/
+	width:952px;
+	height:175px;
+	margin:50px auto;
+	padding:0 14px;;
+	background:#F6F3E9;
+	border:1px solid #CCC;
+}
+.txt{                  /*整理控制标题和播放按钮*/
+	height:50px;
+	line-height:50px;
+	color:#A84848;
+}
+.txt h2{              /*控制标题*/
+	width:175px;
+	padding-left:32px;
+	font-size:16px;
+	background:url(images/iconh.png) no-repeat left center;
+	float:left;
+}
+.txt a{              /*控制播放按钮*/
+	display:inline-block;
+	width:60px;
+	padding-left:25px;
+	float:right;
+	font-weight:bold;
+	font-size:14px;
+} 
+.txt a:link,.txt a:visited{  /*播放按钮的默认样式*/
+	color:#A84848;
+	text-decoration:none;
+	background:url(images/play1.png) no-repeat left center;
+}
+.txt a:hover{                /*鼠标移上播放按钮时的样式*/
+	color:#000;
+	background:url(images/play2.png) no-repeat left center;
+}
+.con li{
+	width:148px;
+	height:105px;
+	float:left; 
+	padding:20px 0 0 90px;
+}
+.radio{background:#52A6B6 url(images/icon1.png) no-repeat 15px 15px;}
+.radio:hover{ background:#313131 url(images/icon5.png) no-repeat 15px 15px;}
+.song{ background:#55B9B6 url(images/icon2.png) no-repeat 15px 15px;}
+.song:hover{ background:#313131 url(images/icon6.png) no-repeat 15px 15px;}
+.album{ background:#55BA7C url(images/icon3.png) no-repeat 15px 15px;}
+.album:hover{ background:#313131 url(images/icon7.png) no-repeat 15px 15px;}
+.mv{ background:#A16580 url(images/icon4.png) no-repeat 15px 15px;;}
+.mv:hover{ background:#313131 url(images/icon8.png) no-repeat 15px 15px;;}
+.radio h2,.song h2,.album h2,.mv h2{ font-size:44px;}
+.radio p,.song p, .album p,.mv p{ line-height:22px;}
+.radio a:link,.radioa:visited,.song a:link,.song a:visited,.album a:link,.album a:visited,.mv a:link,.mv a:visited{
+	color:#FFF;
+	text-decoration:none;
+}

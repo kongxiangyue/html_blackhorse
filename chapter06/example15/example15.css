@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置浏览器的默认样式*/
+body,form,input{margin:0; padding:0; border:none;}
+.list{                 /*整体控制表单*/
+	width:500px;
+	height:280px;
+	background:url(images/bg.png) no-repeat;
+	margin:50px auto;
+	padding-top:70px;
+}
+input{                 /*控制input控件*/
+	display:block;
+	width:290px;
+	height:34px;
+	background-color:#11131f;
+	border:2px solid #4f5556;
+	margin:25px auto;
+	color:#FFF;
+	padding-left:10px;
+}
+.btn{                  /*单独控制最后一个按钮*/
+	width:302px;
+	height:34px; 
+	background:url(images/line.png) repeat-x;
+	border:none;
+	color:#ccc;
+	font-family:"微软雅黑";
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>子元素相对于直接父元素定位</title>
+<style type="text/css">
+body{ margin:0px; padding:0px; font-size:18px; font-weight:bold;}
+.father{
+	margin:10px auto;
+	width:300px;
+	height:300px;
+	padding:10px;
+	background:#ccc;
+	border:1px solid #000;
+	position:relative;          /*相对定位，但不设置偏移量*/
+}
+.child01,.child02,.child03{
+	width:100px;
+	height:50px;
+	line-height:50px;
+	background:#ff0;
+	border:1px solid #000;
+	margin:10px 0px;
+	text-align:center;
+}
+.child02{
+	position:absolute;         /*绝对定位*/
+	left:150px;                 /*距左边线150px*/
+	top:100px;                  /*距顶部边线100px*/
+}
+</style>
+</head>
+<body>
+<div class="father">
+     <div class="child01">child-01</div>
+	<div class="child02">child-02</div>
+     <div class="child03">child-03</div>
+</div>
+</body>
+</html>

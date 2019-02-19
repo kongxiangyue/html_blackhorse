@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{font-size:14px; font-family:"微软雅黑";}
+/*清除浏览器默认样式*/
+body,p,ul,li{margin:0; padding:0; list-style:none;}
+/*整体控制表单*/
+.bg{width:500px; height:180px; margin:50px auto; border:3px double #ccc; padding:30px; background:url(images/bg.png) no-repeat center center;}
+/*提示信息*/
+ul{float:left;}
+li{text-align:right;  height:50px;}
+/*表单控件*/
+.list{float:left;}
+p{width:360px; height:50px; }
+span{display:none;float:right; padding:0 0 0 10px;color:red;}
+

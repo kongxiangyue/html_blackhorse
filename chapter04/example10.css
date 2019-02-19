@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+/*将页面中所有元素的内外边距设置为0*/
+*{ padding:0; margin:0;}
+/*控制外面的大盒子*/
+.all{
+	width:630px;
+	height:45px;
+	margin:50px auto;
+	background-color:#192132;
+	padding-left:20px;
+	border-bottom:3px solid #000;
+}
+/*整体控制小盒子*/
+span{
+	display:inline-block;
+	width:80px;
+	height:45px;
+	border-bottom:3px solid #1ba2c7;
+}
+/*给小盒子设置不同的背景图像*/
+.one{background:url(images/1.png) no-repeat;}
+.two{background:url(images/2.png) no-repeat;}
+.three{background:url(images/3.png) no-repeat;}
+.four{background:url(images/4.png) no-repeat;}
+.five{background:url(images/5.png) no-repeat;}
+.six{background:url(images/6.png) no-repeat;}
+.seven{background:url(images/7.png) no-repeat;}
+

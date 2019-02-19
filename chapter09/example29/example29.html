@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表单事件</title>
+<link href="example29.css" rel="stylesheet" type="text/css" />
+<script src="example29.js" type="text/javascript"></script>
+</head>
+<body>
+    <form action="#" method="post" class="bg">
+        <ul>
+            <li>用户名：</li>
+            <li>输入密码：</li>
+            <li>确认密码：</li>
+        </ul>
+        <div class="list">
+            <p><input type="text" /></p>
+            <p><input type="password" onblur="checkEmpty(this)" id="pwd"/><span>密码不能为空！</span></p>
+            <p><input type="password" onblur="checkPwd(this)" /><span>两次密码不一致，请重新输入！</span></p>
+            <input type="button" value="提交" />
+        </div>
+    </form>
+</body>
+</html>

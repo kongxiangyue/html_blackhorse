@@ -1,0 +1,93 @@
+/*重置浏览器默认样式*/
+body,ul,input,p,dl,dt,dd,h1{margin:0;padding:0;}
+/*全局控制*/
+body{min-width:755px;color:#6C6C6C;font-size:12px;}
+/*定义公共样式*/
+ul{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+.left{float:left;}
+.right{float:right;}
+/*用户信息栏*/
+#top{
+	height:30px;
+	width:100%;
+	line-height:30px;
+	background:#F7F7F7;
+	border-bottom:1px solid #EEE;
+}
+#top .top_nav{
+	max-width:1220px;
+	margin:0 auto;
+}
+#top ul{margin:0 20px;}
+#top li{
+	float:left;
+	padding:0px 5px 0px 0px;
+}
+#top .line{color:#CCC;}
+.right li{ cursor:pointer;}
+.right li span{ padding:0px 9px;}
+/*下拉列表*/
+.right .ul00{position: relative;}
+.right #ul01{
+ 	width: 95px;
+ 	display:none;
+ 	position:absolute;
+ 	left:0;
+ 	top:30px; 
+ 	background-color:#FFF;
+ 	border:thin; 
+ 	border-color:EEE; }
+.right #ul01 a{
+	display:block;
+	padding:0 10px; 
+	line-height:28px;
+	color:#6C6C6C;}
+.right #ul01 a:hover{background:#F5F5F5;}
+/*传智商城头部*/
+#header{
+	width:1220px;
+	margin:0 auto;
+	padding-top:20px;
+}
+#header a{
+	width:240px;
+	display:block;
+}
+#header #search{
+	width:500px;
+	margin-top:15px;
+}
+#header #search input{
+	width:416px;
+	height:30px;
+	border:3px solid #E4393C;
+}
+#header #search .search_btn{
+	width:78px;
+	height:36px;
+	background: #E4393C;
+	font-size:14px;
+	font-weight:700;
+	color:#FFF;
+	cursor:pointer;
+}
+#header #search p{
+	color:#999;
+	font-size:12px;
+	margin-top:5px;
+}
+#header #info{
+	margin-top:18px;
+	margin-left:20px;
+}
+#header #info input{
+	height:32px;
+	border:1px solid #E3E3E3;
+	background-color: #F7F7F7;
+	color:#666;
+	padding:0 10px;
+	margin-right:12px;
+}
+

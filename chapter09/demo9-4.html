@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>动态获取当前时间</title>
+<style type="text/css">
+body{padding:10px;}
+#time{background-color:#CCCCFF; width:310px; border:1px solid #cccccc; line-height:48px;
+text-align:center; padding:20px 10px; font-size:28px; color:#0000CC; font-weight:bold;}
+</style>
+<script type="text/javascript">
+function showCurrentTime()
+{
+	var today = new Date();
+	var year = today.getFullYear();
+	var month = today.getMonth()+1;
+	var date = today.getDate();
+	var day = today.getDay();
+	var hours = today.getHours();
+	var minutes	= today.getMinutes();
+	var seconds	= today.getSeconds();
+	var milliseconds = today.getMilliseconds();
+	switch(day){
+	  case 0: week_str="星期日";break;
+	  case 1: week_str="星期一";break;
+	  case 2: week_str="星期二";break;
+	  case 3: week_str="星期三";break;
+	  case 4: week_str="星期四";break;
+	  case 5: week_str="星期五";break;
+	  default: week_str="星期六";
+	}
+	//如果时间或日期值不够两位，补0
+	if(month<10)	month	= "0"+month;
+	if(date<10)		date	= "0"+date;
+	if(hours<10)	hours	= "0"+hours;
+	if(minutes<10)	minutes = "0"+minutes;
+	if(seconds<10)	seconds = "0"+seconds;
+	//组合输出字符串
+	var str = year+"年"+month+"月"+date+"日 "+week_str;
+	str += "<br />"+hours+":"+minutes+":"+seconds+" "+milliseconds+"ms";
+	//将时间字符串，加入到id=time的元素中
+	var obj = document.getElementById("time");
+	obj.innerHTML = str;
+	setTimeout("showCurrentTime()",1000);
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="showCurrentTime()" value="动态获取当前时间"><p>
+<div id="time"></div>
+</body>

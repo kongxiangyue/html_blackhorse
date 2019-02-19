@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/*将页面中所有元素的内外边距设置为0*/
+*{margin:0; padding:0;}
+/*设置外面盒子的样式*/
+.outer{
+	width:900px;
+	height:344px;
+	margin:50px auto;
+	background:url(images/bg.png) repeat-x;
+}
+/*设置里面盒子的样式*/
+.inner{
+	width:900px;
+	height:344px;
+	background:url(images/coffee.png) no-repeat center 30px;
+}

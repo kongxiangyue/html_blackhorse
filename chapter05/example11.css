@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{font-size:16px; font-family:"微软雅黑"; color:#222;}
+/*重置浏览器的默认样式*/
+body,ul,li{ padding:0; margin:0; list-style:none;}
+ul{
+	width:171px;
+	height:299px;
+	background:url(images/bg.jpg) no-repeat;
+	padding-top:190px;
+	color:#FFF;
+}
+li{
+	width:80px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	border-bottom:1px dotted #fff;
+	margin-left:45px;
+}
+.no_line{border:none;}
+
+
+

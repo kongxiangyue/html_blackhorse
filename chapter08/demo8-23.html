@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>switch条件语句</title>
+</head>
+<body>
+<script type="text/javascript">
+ var name="王丽";    //定义了一个变量，并对其赋值
+ switch (name) {    //应用switch语句获取变量值                                   
+ 	case "小明":    //判断变量值与case标签目标值是否匹配
+ 		document.write("第一名：小明:657分"); //匹配则输出相应的名次成绩
+ 		break;  //跳出循环
+ 	case "小丽":
+ 		document.write("第二名：小丽:621分");
+ 		break;
+ 	case "小乔":
+ 		document.write("第三名：小乔:590分");
+ 		break;	
+ 	default:
+ 		alert("只限前三名分数查询");  //如判断都不匹配则弹出该执行语句 
+ 		break;	
+ }
+</script>
+</body>
+</html>

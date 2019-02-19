@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>制作计算器</title>
+<script type="text/javascript">
+function calculate(){
+	//获取数据，并将其转化为浮点型数据
+	var num1 = parseFloat(document.getElementById("num1").value);
+	var num2 = parseFloat(document.getElementById("num2").value);
+	var oper = document.getElementById("operator").value;
+	//存放输出结果
+	var res = "";
+	//拼接运算表达式
+ 	var expression= num1+oper+num2;
+ 	//判断输入的数据，若不是数据或是为0，都为假；否则为真
+ 	if(num1 && num2){
+ 		//执行运算表达式，求出运算结果
+ 		eval("res="+expression);
+ 	}else{
+ 		//判断此运算是否为除法且除数是否为0
+ 		if((oper == "/") && (num2 ==0)){
+ 			res = "除数不能为0";
+ 		}else if(num1 && (num2 ==0) || (num1 ==0) && num2){
+ 			eval("res="+expression);
+ 		}else if((num1 ==0) && (num2 ==0)){
+ 			eval("res="+expression);
+ 		}else{
+ 			res = "请输入数字";
+ 		}
+ 	}
+ 	//将运算结果或提示写入到form表单中
+ 	document.getElementById('result').value = res;
+ }
+ </script>
+</head>
+<body >
+<form>
+	<input type="text" id="num1" value=""/>
+	<select id="operator">
+		<option value="+" selected="selected">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select>
+	<input type="text" id="num2" value=""/>
+	<input type="button" value="=" onclick="calculate()"/>
+	<input type="text" id="result" readonly="true"/>
+</form>	
+</body>
+</html>

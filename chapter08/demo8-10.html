@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>指定节点操作</title>
+<script type="text/javascript">
+    function init(){
+          var element = document.getElementById("js");  //找到<li id="js">的元素
+          element.style.fontWeight = "bold";   //将文本加粗
+          var lis = document.getElementsByTagName("li");  //找到所有li元素
+          lis[0].style.fontSize = "24px";   //将第一个li元素的字体设为24px
+      }
+</script>
+</head>
+ <body onload="init()">
+ 	<ul>
+ 		<li id="html">HTML</li>
+ 		<li id="css">CSS</li>
+ 		<li id="js">JavaScript</li>
+ 		<li id="div">DIV</li>
+ 	</ul>
+ </body>
+</html>

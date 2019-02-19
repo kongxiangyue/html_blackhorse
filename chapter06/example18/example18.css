@@ -1,0 +1,63 @@
+/*全局控制*/
+body{font-size:12px; 	font-family:"微软雅黑"; } 
+/*重置浏览器的默认样式*/
+body,h2,form,img,input,select,textarea{padding:0; margin:0; list-style:none; border:none;}
+.all{         /*整体控制页面*/  
+	width:1024px;
+	height:863px;
+	margin:0 auto;
+	background:url(images/bg.png) no-repeat; 
+}
+.list{        /*整体控制表单*/
+	width:685px;
+	padding:180px 0 0 340px;
+}
+p{margin-top:20px;}
+h2{          /*控制表单标题*/
+	 font-size:38px;
+	 color:#26211e;
+	 margin-bottom:60px;
+	 padding-left:50px;
+}
+ /*设置表单控件样式*/
+ .txt,.age{
+	 width:360px;
+	 height:30px;
+	 line-height:30px;
+	 padding-left:40px;
+	 color:#ccc;
+}
+ .txt{background:#fff url(images/icon2.png) no-repeat 10px center;}
+ .age{background:#fff url(images/icon3.png) no-repeat 10px center;}
+ .choose{
+	 width:390px;
+	 height:25px;
+	 line-height:25px;
+	 background-color:#FFF;
+	 padding:5px 0 0 10px; 
+}
+ .course,.money{
+	 width:190px;
+	 height:25px;
+	 padding-left:10px;
+}
+ .money{color:#ddd;}
+ .money_box span{
+	 font-size:18px;
+	 font-weight:bold;
+	 color:#fff;
+}
+ .message{
+	 width:390px;
+	 height:80px;
+	 padding:5px 0 0 10px;
+	 font-size:12px;
+	 color:#ccc;
+}
+ .btn{
+	 width:390px;
+	 height:30px;
+	 background-color:#eb6854;
+	 color:#FFF;
+	 font-weight:bold;
+}

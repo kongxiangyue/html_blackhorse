@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/ 
+body{ font-size:12px;}   
+/*清除浏览器的默认样式*/
+body,img{padding:0; margin:0; border:0;}  
+.all{
+	width:346px;
+	height:578px;
+	background:url(images/bg.png) no-repeat;
+	margin:20px auto;
+	padding:90px 0 0 34px;
+}
+.content{
+	width:277px;
+	height:414px;
+	overflow:scroll;
+}

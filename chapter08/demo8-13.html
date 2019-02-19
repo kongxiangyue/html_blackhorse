@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>元素属性与内容操作</title>
+<script type="text/javascript">
+	function init() {
+ 		 var test = document.getElementById("test");  //获取test元素对象
+ 		 test.innerHTML = "<h1>Hello,JavaScript!</h1>";  //元素内容操作
+ 		 test.setAttribute("style","font-size:12px;color:red;");  //设置元素的属性
+ 		 test.innerHTML += test.getAttribute("style")  //获得元素的style属性并显示
+ 	}
+</script>
+</head>
+<body onload="init()">
+  <div id="test">test</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+p{
+	font-size:16px;         /*设置段落文本的字号*/
+	font-family:"微软雅黑";  /*设置段落文本的字体*/
+	line-height:28px;       /*设置段落文本的行高*/
+	text-indent:2em;         /*设置段落文本首行缩进*/
+}  
+.blue{ color:#33F;}         /*特殊的蓝色文本*/
+.red{color:#F00;}           /*特殊的红色文本*/
+.money{ font-size:26px;}    /*18000的文本大小*/
+
