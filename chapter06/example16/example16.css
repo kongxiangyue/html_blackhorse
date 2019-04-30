@@ -1,7 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 *{margin:0; padding:0;}
-#list{width:420px; height:474px; background:url(images/bg.png) no-repeat; padding:110px 0 0 110px; font-size:14px; font-family:"微软雅黑";color:#7b6c55; }
+#list{
+	width:420px; 
+	height:474px; 
+	background:url(images/bg.png) no-repeat; 
+	padding:110px 0 0 110px; 
+	font-size:14px; 
+	font-family:"微软雅黑";
+	color:#7b6c55; }
 label{width:210px; height:27px; padding-left:50px;margin-top:10px; display: block;}
 p{width:260px; height:37px; padding-left:50px;line-height:23px;font-size:16px;margin-bottom:20px; }
 .title1{background:url(images/num1.png) no-repeat left center; }
