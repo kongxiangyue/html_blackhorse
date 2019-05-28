@@ -41,13 +41,38 @@ body {
     font-family: Economica;
     color: white;
     font-size: 3.5rem;
+    display: inline-block;
+    width: 250px;
 }
 
 
 #nav {
     float: right;
-
 }
+#nav li {
+    display: inline;
+}
+
+#nav a {
+    display: inline-block;
+    color: black;
+    width:  40px;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: blue;
+    padding-top: 6px;
+}
+
+#nav a:hover {
+    background-color: aquamarine;
+}
+
+
+
+
 </style>
 </head>
 <body>
@@ -55,13 +80,19 @@ body {
     <div id="wrapper" class="red_boder">
 
         <div id="header">
-            <p id="ambitious">AMBITIOUS</>
+            <p id="ambitious" class="red_boder">AMBITIOUS</p>
             <div id="nav" class="red_boder">
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                    <li><a href="#">link4</a></li>
                 </ul>
             </div>
+        </div>
+        
+        <div>
+
         </div>
 
 
