@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'Economica';
+	src: url('font/Economica-Bold-OTF.otf') format('OpenType');
+}
+@font-face {
+	font-family: 'Kaushan';
+	src: url('font/KaushanScript-Regular.otf') format('OpenType');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: url(ambitios_header_bg.gif), url(ambitios_shape_carousel.png), url(ambitios_first_row_bg.gif),url(ambitios_footer_bg.gif);
+    background-position: center top, center 390px, center 64px,center 925px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+.red_boder {
+    border: 2px red solid;
+}
+
+#wrapper {
+    width: 960px;
+    margin: auto;
+}
+
+#ambitious{
+    font-family: Economica;
+    color: white;
+    font-size: 3.5rem;
+    display: inline-block;
+    width: 250px;
+}
+
+
+#nav {
+    float: right;
+}
+#nav li {
+    display: inline;
+}
+
+#nav a {
+    display: inline-block;
+    color: black;
+    width:  40px;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: blue;
+    padding-top: 6px;
+}
+
+#nav a:hover {
+    background-color: aquamarine;
+}
+
+#ambitios_img {
+    float: left;
+}
+#middle {
+    padding-bottom: 50px;
+}
+
+#middle h1 {
+    font-family: "Kaushan";
+    color: white;
+    font-size: 2.2rem;
+}
+
+#middle p {
+    color: white;
+    font-size: 1.2rem;
+    }
+
+
+#content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #FFF;
+	text-align: center;
+	font-size: 24px;
+	height: 80px;
+	line-height: 1em;
+	vertical-align: middle;
+	text-transform: capitalize;
+	padding-top: 10px;
+    border-radius: 10px 10px 0 0;
+    background: #70b0e0; /* Old browsers */
+}
+
+#box1, #box2, #box3, #box4 {
+	float: left;
+	width: 225px;
+	height:400px;
+	clear: none;
+	margin-right: 20px;
+	border-radius: 10px;
+	background-color: #EEE;
+	box-shadow:2px 2px 5px #999;
+}
+
+
+

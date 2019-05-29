@@ -3,84 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>我的第一个实训网页</title>
-<style>
-
-@font-face {
-	font-family: 'Economica';
-	src: url('font/Economica-Bold-OTF.otf') format('OpenType');
-}
-@font-face {
-	font-family: 'Kaushan';
-	src: url('font/KaushanScript-Regular.otf') format('OpenType');
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    background: url(ambitios_header_bg.gif), url(ambitios_shape_carousel.png), url(ambitios_first_row_bg.gif),url(ambitios_footer_bg.gif);
-    background-position: center top, center 390px, center 64px,center 925px;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-}
-
-.red_boder {
-    border: 2px red solid;
-}
-
-#wrapper {
-    width: 960px;
-    height: 60px;
-    margin: auto;
-}
-
-#ambitious{
-    font-family: Economica;
-    color: white;
-    font-size: 3.5rem;
-    display: inline-block;
-    width: 250px;
-}
-
-
-#nav {
-    float: right;
-}
-#nav li {
-    display: inline;
-}
-
-#nav a {
-    display: inline-block;
-    color: black;
-    width:  40px;
-    height: 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    background-color: blue;
-    padding-top: 6px;
-}
-
-#nav a:hover {
-    background-color: aquamarine;
-}
-
-
-
-
-</style>
+<link href="my_practice.css" rel="stylesheet" />
 </head>
 <body>
 
-    <div id="wrapper" class="red_boder">
+    <div id="wrapper" >
 
         <div id="header">
-            <p id="ambitious" class="red_boder">AMBITIOUS</p>
+            <p id="ambitious" >AMBITIOUS</p>
             <div id="nav" class="red_boder">
                 <ul>
                     <li><a href="#">link1</a></li>
@@ -91,10 +21,52 @@ body {
             </div>
         </div>
         
-        <div>
+        <div id="middle" class="red_boder">
+            <img id="ambitios_img" src="ambitios_pic1.png"/>
+            <h1>women prefer</h1>
+            <h1>pastel colored flowers</h1>
+            <p>Flowers were used to signal meanings in the time when social meetings between men and women was difficult. Lilies make people think of life. Red roses make people think of love, beauty, and passion.</p>
+            <a href="#"><img src="ambitios_footer_button.png" alt="button" width="199" height="62" class="button"></a> 
 
         </div>
 
+
+        <div id="content">
+            <div id="box1">
+                <h2>wide range of header sliders</h2>
+
+                
+                <div>
+
+                    <p>We already have 3 absolutely different sliders, such as:</p>
+                    <ul>
+                      <li>Simple but stylish JCycle</li>
+                      <li>Famous 3d slider</li>
+                      <li>Carousel slider</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, massa eu</p>
+
+                </div>
+            </div>
+
+
+            <div id="box2">
+                    <h2>wide range of header sliders</h2>
+    
+                    
+                    <div>
+    
+                        <p>We already have 3 absolutely different sliders, such as:</p>
+                        <ul>
+                          <li>Simple but stylish JCycle</li>
+                          <li>Famous 3d slider</li>
+                          <li>Carousel slider</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, massa eu</p>
+    
+                    </div>
+                </div>
+        </div>
 
     </div>
 
